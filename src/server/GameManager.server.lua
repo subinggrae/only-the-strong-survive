@@ -7,10 +7,12 @@ local Server = ServerScriptService:WaitForChild("Server")
 local LeaderboardService = require(Server:WaitForChild("LeaderboardService"))
 local CoinService = require(Server:WaitForChild("CoinService"))
 local PortalService = require(Server:WaitForChild("PortalService"))
+local MonsterService = require(Server:WaitForChild("MonsterService"))
 
 -- 1. Initialize Auto Spawners
 CoinService.StartAutoSpawner()
 PortalService.StartAutoSpawner()
+MonsterService.Start()
 
 -- 2. Handle Player Events
 Players.PlayerAdded:Connect(function(player)
