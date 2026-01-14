@@ -1,13 +1,13 @@
-# Shared Modules (`src/shared`)
+# 공유 모듈 (`src/shared`)
 
-This directory corresponds to `ReplicatedStorage/Shared`.
-It contains code and data accessible by both Client and Server.
+이 디렉토리는 `ReplicatedStorage/Shared`에 매핑됩니다.
+클라이언트와 서버에서 모두 접근 가능한 코드와 데이터를 포함합니다.
 
-## Content
-- **Config**: Configuration tables (constants) for game balance (e.g., `CombatConfig`, `CoinConfig`).
-- **Utils**: Helper functions used across the project.
-- **Types**: Luau type definitions.
+## 내용
+- **Config**: 게임 밸런스 설정(상수) 테이블 (예: `CombatConfig`, `CoinConfig`).
+- **Utils**: 프로젝트 전체에서 사용되는 헬퍼 함수들.
+- **Types**: Luau 타입 정의.
 
-## Rules
-- **Side-Effect Free**: Modules here should generally be pure functions or data holders.
-- **Replication**: Remember that changes to tables here by the Client are NOT replicated to the Server (and vice versa).
+## 규칙
+- **부작용 없음**: 이 디렉토리의 모듈은 일반적으로 순수 함수나 데이터 보관용이어야 합니다.
+- **복제**: 클라이언트에서 이 테이블을 변경해도 서버로 복제되지 않습니다 (그 반대도 마찬가지).
